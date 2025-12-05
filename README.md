@@ -11,6 +11,7 @@ The system allows:
   - Viewing all sales
   - Viewing item-based and weight-based products separately
   - Updating product prices
+  - Deleting products from database
   - Calculating totals for different product types
 
 ---
@@ -36,6 +37,7 @@ Handles database operations and exceptions:
 - `calculateTotalWBP()` → calculates total of weight-based products
 - `calculateTotalIBP()` → calculates total of item-based products
 - `updatePrice(barcode, percentage)` → updates product prices
+- `deleteProduct(barcode)` → delete product from database
 - `returnBarcodes()` → returns only product barcodes as a list
 
 ### GUI Application
@@ -101,7 +103,10 @@ GUI dynamically interacts with the database and catches all exceptions.
 6. To **update product prices**:
    - Click **Update Price**
    - Enter barcode and percentage increase in input boxes
-7. All actions interact with the database automatically.
+7. To **delete product**:
+   - Click **Delete Product**
+   - Enter barcode of the product you want to delete in input boxes 
+8. All actions interact with the database automatically.
 
 ---
 
