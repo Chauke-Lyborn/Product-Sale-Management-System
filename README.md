@@ -74,7 +74,7 @@ GUI dynamically interacts with the database and catches all exceptions.
 
    - **Product Table:**
      ```sql
-    CREATE TABLE tblproduct (
+     CREATE TABLE tblproduct (
         Barcode_No INT(8) PRIMARY KEY NOT NULL,
         Product_Name VARCHAR(18) NOT NULL,
         Product_Category VARCHAR(4) NOT NULL,
@@ -82,7 +82,7 @@ GUI dynamically interacts with the database and catches all exceptions.
         Weight INT(11),
         Unit_Price INT(11) NOT NULL,
         Amount_Paid DOUBLE NOT NULL
-    );
+     );
      ```
 
 ---
